@@ -1,0 +1,8 @@
+#!/bin/bash -e
+
+perlbrew use webkeepass
+
+export DANCER_PORT='5001'
+export DANCER_ENVIRONMENT='production'
+
+/srv/webkeepass/bin/app.pl
